@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home - Musical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        .banner {
+            background-color: #F5F5F5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background: black; border-bottom-width: medium; overflow: hidden;">
+        <div class="logo" style="float: left;">
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="cabeçalho-link" style="float: right;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: inline-block; margin-right: 50px;"><a href="index.html" style="color: white">HOME</a>
+                </li>
+                <li style="display: inline-block;"><a href="enviaMusicas.html"><button class="buttonC btn"
+                            style="margin-bottom: 20px">ENVIAR MÚSICAS</button></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="background">
+        <div class="container-text">
+            <div class="text">
+                <h1>Para adicionar uma música, faça <a href="login.jsp"><span>login.</span></a></h1>
+                <br><br><br>
+                <h2 style="color: white">Escolha uma <span>música</span></h2>
+                <form action="" method="GET">
+                    <label class="form-label" style="color: white; margin:0px;">Explorar</label>
+                    <div>
+                        <input placeholder="Pesquise a sua música" type="text" id="pesquisar" name="pesquisa"
+                            style="border-radius: 10px; width: 360px; height: 35px; padding-left: 10px;">
+                        <button type="submit" class="buttonC btn" style="margin-bottom: 20px">PESQUISAR</button>
+                    </div>
+                </form>
+                <br>
+                <table id="tabela-music" style="width: 70%; text-align: center; background-color: white;border-radius: 7px">
+                    <tr>
+                        <th> </th>
+                        <th>Nome</th>
+                        <th>Gênero</th>
+                        <th>Autor</th>
+                        <th>Música</th>
+                    </tr>
+                    <tbody id="music-tabela-linhas">
+                       
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="Script/scriptMySongs.js"></script>
+    <script>
+        window.onload = carregaMusicas();
+    </script>
+</body>
+
+</html>
